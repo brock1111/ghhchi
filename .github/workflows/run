@@ -1,4 +1,4 @@
-name: MirrorBot Environment
+name: runner
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
    
 env:
   # Change these values if you have forked it for your own works
-  GitHubMail: "80205889+dozzler555@users.noreply.github.com"
-  GitHubName: "dozzler555" 
+  GitHubMail: "${{ secrets.email }}"
+  GitHubName: "${{ secrets.user }}" 
 
 jobs:
   build:
